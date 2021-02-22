@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  font-family: 'Roboto', sans-serif;
+}
+
+.all{
+  width: 80vw;
+  margin: auto;
+}
+
+.all h1{
+  color: #ffff;
+  margin: 30px;
+  text-align: center;
+}
+
+.contenedorServicio{
+  background-color: #ffff;
+  border-radius: 10px;
+  height:  auto;
+  padding: 15px;
+  display: flex;
+}
+
+.contenedorAdd {
+  width: 50%;
+  text-align: center;
+}
+.contenedorAdd span{
+  color: rgb(104, 101, 101);
+  font-size: 20px;
+}
+.add{
+  margin-top: 20px;
+}
+.add input{
+  display: block;
+  border: solid 1px rgb(0, 0, 0);
+
+}
+
+.text{
+  margin: 0 auto;
+  margin-bottom:15px ;
+  padding: 10px;
+  font-size: 15px;
+  width: 70%;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn{
+  margin: auto;
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #3357b9;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.contenedorLista{
+  width: 50%;
+  text-align: center;
+  color: rgb(104, 101, 101);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.elemento{
+  order: 0;
+  width: 70%;
+  height: 50px;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  border:0.3px solid rgb(233, 224, 224);
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  font-size: 15px;
+}
+.elemento span{
+  background-color: rgb(30, 69, 201);
+  color: #ffff;
+  border-radius: 15px;
+  width: 60px;
+}
+.contDatos{
+  order: 5;
+  width: 70%;
+  padding: 5px;
+  margin: auto;
+  margin-top: 10px;
+  color: black;
+  border-radius: 0.2px;
+  border: 1px solid rgb(138, 138, 138)
+}
+.contPresupuesto{
+  background-color: rgb(75, 193, 248);
+}
+
+.contRestante{
+  background-color: rgb(36, 241, 129); 
+
+}
+
+
+@media (max-width: 600px){
+  .all h1{
+    font-size: 30px;
+  }
+  .contenedorServicio{
+    display: block;
+  }
+  .contenedorAdd{
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 15px;
+  }
+  .contenedorAdd span{
+    font-size: 15px;
+  }
+  .contenedorLista{
+    margin: 0 auto;
+    width: 70%;
+  }
+  .contenedorLista span{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px){
+  .contenedorServicio{
+    min-width: 250px;
+  }
+  .contenedorAdd{
+    min-width: 150px;
+  }
+  .text{
+    width: 100%;
+    font-size: 10px;   
+  }
+  .contenedorLista{
+    width: 100%;
+  }
+}
